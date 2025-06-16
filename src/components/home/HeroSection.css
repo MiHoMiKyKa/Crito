@@ -1,0 +1,164 @@
+.hero {
+
+    background-color: #F0EFE9;
+    overflow: hidden;
+    position: relative;
+}
+
+.wavy-lines {
+    color: #F0EFE9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    max-width: 100%;
+    height: auto;
+    pointer-events: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+}
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1 1 50%;
+    max-width: 100%;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-text h1 {
+    font-size: 96px;
+    font-weight: 700;
+    max-width: 831px;
+    margin-bottom: 1.2rem;
+    line-height: 1.1;
+   
+}
+
+.hero-text p {
+    font-family: 'Inter', sans-serif;
+    color: #555;
+    max-width: 691px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;  
+    align-items: stretch;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 20px;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.btn.primary {
+  background-color: #f9d783;
+  color: black;
+  border: none;
+}
+
+.btn.primary:hover {
+  background-color: #e6c46d;
+}
+
+.btn.outline {
+  background-color: transparent;
+  border: 2px solid black;
+  color: black;
+}
+
+.btn.outline:hover {
+  background-color: black;
+  color: white;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-self: flex-start;
+}
+
+.hero-image img {
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+
+@media (max-width: 768px) {
+    .background-lines{
+        display: none;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .hero-text h1 {
+        font-size: 48px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        align-items: stretch;
+        padding: 0 1rem;
+      
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .hero-image {
+        justify-content: center;
+        margin-top: 2rem;
+        position: relative;
+    }
+    .hero-image img {
+        max-width: 100%;
+        height: auto;
+        position: static;
+    }
+}
